@@ -10,10 +10,9 @@ from abstractcollection import AbstractCollection
 class AbstractBag(AbstractCollection):
     
     def __init__(self, sourceCollection = None):
-        self._size = 0
-        if sourceCollection:
-            for item in sourceCollection:
-                self.add(item)
+        AbstractCollection.__init__(self, sourceCollection)
+        
     
-    def add(self, item):
-        pass
+
+        
+    
